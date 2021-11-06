@@ -15,6 +15,8 @@
 		48D91B3D269D7EA400F0DA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D91B3B269D7EA400F0DA9D /* Main.storyboard */; };
 		48D91B3F269D7EA500F0DA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D91B3E269D7EA500F0DA9D /* Assets.xcassets */; };
 		48D91B42269D7EA500F0DA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D91B40269D7EA500F0DA9D /* LaunchScreen.storyboard */; };
+		48E445C8273604BF00599CF0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E445C7273604BF00599CF0 /* SettingsViewController.swift */; };
+		48E445CA2736051E00599CF0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E445C92736051E00599CF0 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		48D91B3E269D7EA500F0DA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D91B41269D7EA500F0DA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48D91B43269D7EA500F0DA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E445C7273604BF00599CF0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		48E445C92736051E00599CF0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,9 @@
 				48D91B3B269D7EA400F0DA9D /* Main.storyboard */,
 				48A34DE726A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				48A34DE926A5357600B24EF9 /* SceneDelegate.swift */,
+				48E445C7273604BF00599CF0 /* SettingsViewController.swift */,
 				48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */,
+				48E445C92736051E00599CF0 /* SettingTableViewCell.swift */,
 			);
 			path = AWM;
 			sourceTree = "<group>";
@@ -154,9 +160,11 @@
 			files = (
 				48A34DEA26A5357600B24EF9 /* SceneDelegate.swift in Sources */,
 				48D91B3A269D7EA400F0DA9D /* ClassifyViewController.swift in Sources */,
+				48E445CA2736051E00599CF0 /* SettingTableViewCell.swift in Sources */,
 				48D91B36269D7EA400F0DA9D /* AppDelegate.swift in Sources */,
 				48A34DE626A4EEF500B24EF9 /* EightClassClassification.mlmodel in Sources */,
 				48A34DE826A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				48E445C8273604BF00599CF0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
