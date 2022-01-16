@@ -10,6 +10,8 @@ import CoreML
 import Vision
 import ImageIO
 
+public let defaults = UserDefaults.standard
+
 class ClassifyViewController: UIViewController {
 
 

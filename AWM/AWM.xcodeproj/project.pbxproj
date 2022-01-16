@@ -17,6 +17,11 @@
 		48D91B42269D7EA500F0DA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D91B40269D7EA500F0DA9D /* LaunchScreen.storyboard */; };
 		48E445C8273604BF00599CF0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E445C7273604BF00599CF0 /* SettingsViewController.swift */; };
 		48E445CA2736051E00599CF0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E445C92736051E00599CF0 /* SettingTableViewCell.swift */; };
+		48F8EF382793F1B60040226C /* ChangeRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8EF352793F1B60040226C /* ChangeRegionViewController.swift */; };
+		48F8EF392793F1B60040226C /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8EF362793F1B60040226C /* DatePickerViewController.swift */; };
+		48F8EF3A2793F1B60040226C /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8EF372793F1B60040226C /* ChangeNameViewController.swift */; };
+		48F8EF3C2793F1FF0040226C /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8EF3B2793F1FF0040226C /* StaticTableViewController.swift */; };
+		48F8EF402793F49E0040226C /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8EF3F2793F49E0040226C /* PersonalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		48D91B43269D7EA500F0DA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E445C7273604BF00599CF0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		48E445C92736051E00599CF0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		48F8EF352793F1B60040226C /* ChangeRegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeRegionViewController.swift; sourceTree = "<group>"; };
+		48F8EF362793F1B60040226C /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		48F8EF372793F1B60040226C /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
+		48F8EF3B2793F1FF0040226C /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
+		48F8EF3F2793F49E0040226C /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,11 @@
 				48E445C7273604BF00599CF0 /* SettingsViewController.swift */,
 				48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */,
 				48E445C92736051E00599CF0 /* SettingTableViewCell.swift */,
+				48F8EF372793F1B60040226C /* ChangeNameViewController.swift */,
+				48F8EF352793F1B60040226C /* ChangeRegionViewController.swift */,
+				48F8EF362793F1B60040226C /* DatePickerViewController.swift */,
+				48F8EF3B2793F1FF0040226C /* StaticTableViewController.swift */,
+				48F8EF3F2793F49E0040226C /* PersonalViewController.swift */,
 			);
 			path = AWM;
 			sourceTree = "<group>";
@@ -159,11 +174,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A34DEA26A5357600B24EF9 /* SceneDelegate.swift in Sources */,
+				48F8EF382793F1B60040226C /* ChangeRegionViewController.swift in Sources */,
 				48D91B3A269D7EA400F0DA9D /* ClassifyViewController.swift in Sources */,
 				48E445CA2736051E00599CF0 /* SettingTableViewCell.swift in Sources */,
 				48D91B36269D7EA400F0DA9D /* AppDelegate.swift in Sources */,
+				48F8EF3A2793F1B60040226C /* ChangeNameViewController.swift in Sources */,
+				48F8EF392793F1B60040226C /* DatePickerViewController.swift in Sources */,
+				48F8EF3C2793F1FF0040226C /* StaticTableViewController.swift in Sources */,
 				48A34DE626A4EEF500B24EF9 /* EightClassClassification.mlmodel in Sources */,
 				48A34DE826A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				48F8EF402793F49E0040226C /* PersonalViewController.swift in Sources */,
 				48E445C8273604BF00599CF0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
