@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreMedia
 
 class DatePickerViewController: UIViewController {
 
@@ -25,6 +26,7 @@ class DatePickerViewController: UIViewController {
         toolbar.sizeToFit()
         
         let btnDone = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        btnDone.tintColor = UIColor.systemBlue
         toolbar.setItems([btnDone], animated: true)
         
         dateTextField.inputAccessoryView = toolbar
