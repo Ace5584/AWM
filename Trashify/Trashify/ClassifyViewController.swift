@@ -13,7 +13,7 @@ import ImageIO
 public let defaults = UserDefaults.standard
 
 class ClassifyViewController: UIViewController {
-
+    
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var classificationLabel: UILabel!
@@ -47,6 +47,17 @@ class ClassifyViewController: UIViewController {
             let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation)
             do{
                 try handler.perform([self.classificationRequest])
+                if(self.isKeyPresentInUserDefaults(key: "ClassifyPicture")){
+                    var data = UserDefaults.standard.object(forKey: "ClassifyPicture") as! [NSData]
+                    data.append(image.pngData()! as NSData)
+                    defaults.set(data, forKey: "ClassifyPicture")
+                    print("Save Image Exist")
+                }
+                else{
+                    let imageData = [image.pngData()! as NSData]
+                    defaults.set(imageData, forKey: "ClassifyPicture")
+                    print("Save Image New")
+                }
             } catch {
                 print("Failed to perform classification. \n \(error.localizedDescription)")
             }
@@ -67,18 +78,51 @@ class ClassifyViewController: UIViewController {
             if classifications.isEmpty {
                 self.classificationLabel.text = "Nothing recognized."
             } else {
-                let topClassifications = classifications.prefix(2)
-                let descriptions = topClassifications.map { classification in
-                    return String(format: " (%.2f) %@", classification.confidence, classification.identifier)
+                let topClassifications = classifications.prefix(1) // Get only top one result
+                print(type(of:topClassifications[0]))
+                print(topClassifications[0])
+//                let descriptions = topClassifications.map { classification in
+//                    return String(format: " (%.2f) %@", classification.confidence, classification.identifier)
+//                }
+                var description = String(format: "%.2f|%@", topClassifications[0].confidence, topClassifications[0].identifier)
+                self.classificationLabel.text = "Classification: \n" + description
+                let formatter = DateFormatter()
+                let currentDateTime = Date()
+                formatter.timeStyle = .medium
+                formatter.dateStyle = .medium
+                let DateTime = formatter.string(from: currentDateTime)
+                description = description+"|"+DateTime
+                if(self.isKeyPresentInUserDefaults(key: "ClassifyResult")){
+                    var data = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
+                    data.append(description)
+                    defaults.set(data, forKey: "ClassifyResult")
+                    print("Save Data Exist", description)
                 }
-                self.classificationLabel.text = "Classification: \n" + descriptions.joined(separator: "\n")
+                else{
+                    defaults.set([description], forKey: "ClassifyResult")
+                    print("Save Data New", description)
+                }
             }
         }
     }
     
     @IBAction func takePicture() {
-        print("Hello. 2")
-        // Show options for the source picker only if the camera is available.
+        print("Take Picture Drop Down Menu")
+        if(self.isKeyPresentInUserDefaults(key: "ClassifyResult")){
+            let data = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
+            print(data)
+        }
+        else{
+            print("ClassifyResult does not exist")
+        }
+        if(self.isKeyPresentInUserDefaults(key: "ClassifyPicture")){
+            let data = UserDefaults.standard.object(forKey: "ClassifyPicture") as! [NSData]
+            print(data.count)
+        }
+        else{
+            print("ClassifyPicture does not exist")
+        }
+        // Show options for the source picker only if the camera is available.
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             presentPhotoPicker(sourceType: .photoLibrary)
             return
@@ -105,6 +149,10 @@ class ClassifyViewController: UIViewController {
         picker.delegate = self
         picker.sourceType = sourceType
         present(picker, animated: true)
+    }
+    
+    private func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return defaults.object(forKey: key) != nil
     }
 }
 

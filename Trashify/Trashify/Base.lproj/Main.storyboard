@@ -315,7 +315,7 @@
         <!--Personal-->
         <scene sceneID="z5O-AY-FB3">
             <objects>
-                <viewController id="SP9-1N-1vW" customClass="PersonalViewController" customModule="AWM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SP9-1N-1vW" customClass="PersonalViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kfj-qZ-NHk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -380,7 +380,7 @@
         <!--Classify View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ClassifyViewController" customModule="AWM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ClassifyViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -554,7 +554,7 @@
         <!--Settings-->
         <scene sceneID="GY1-WZ-x4Q">
             <objects>
-                <viewController id="DGO-Xb-oS5" customClass="SettingsViewController" customModule="AWM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DGO-Xb-oS5" customClass="SettingsViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CaY-e6-nLt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,7 +573,7 @@
         <!--Personal Information-->
         <scene sceneID="mDN-JR-7QZ">
             <objects>
-                <tableViewController id="FME-Qq-rYC" customClass="StaticTableViewController" customModule="Regimen" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="FME-Qq-rYC" customClass="StaticTableViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="tlO-YT-G7E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,7 +722,7 @@
         <!--Change Region View Controller-->
         <scene sceneID="9Fp-Lj-qtN">
             <objects>
-                <viewController id="zr4-Kj-bYi" customClass="ChangeRegionViewController" customModule="Regimen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zr4-Kj-bYi" customClass="ChangeRegionViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xtd-r4-P3e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -764,7 +764,7 @@
         <!--Date Picker View Controller-->
         <scene sceneID="sdX-ZG-mLA">
             <objects>
-                <viewController id="5St-fC-V9V" customClass="DatePickerViewController" customModule="Regimen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5St-fC-V9V" customClass="DatePickerViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzG-UF-3eA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -807,7 +807,7 @@
         <!--Change Name View Controller-->
         <scene sceneID="Tve-vK-fWW">
             <objects>
-                <viewController id="wSA-2Q-VBT" customClass="ChangeNameViewController" customModule="Regimen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wSA-2Q-VBT" customClass="ChangeNameViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LEW-kt-wO4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
