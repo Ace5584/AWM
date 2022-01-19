@@ -28,7 +28,7 @@
 		48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EightClassClassification.mlmodel; sourceTree = "<group>"; };
 		48A34DE726A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		48A34DE926A5357600B24EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48D91B32269D7EA400F0DA9D /* AWM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48D91B32269D7EA400F0DA9D /* Trashify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trashify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D91B35269D7EA400F0DA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D91B39269D7EA400F0DA9D /* ClassifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
 		48D91B3C269D7EA400F0DA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		48D91B29269D7EA400F0DA9D = {
 			isa = PBXGroup;
 			children = (
-				48D91B34269D7EA400F0DA9D /* AWM */,
+				48D91B34269D7EA400F0DA9D /* Trashify */,
 				48D91B33269D7EA400F0DA9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		48D91B33269D7EA400F0DA9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48D91B32269D7EA400F0DA9D /* AWM.app */,
+				48D91B32269D7EA400F0DA9D /* Trashify.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		48D91B34269D7EA400F0DA9D /* AWM */ = {
+		48D91B34269D7EA400F0DA9D /* Trashify */ = {
 			isa = PBXGroup;
 			children = (
 				48A34E0B26A590B100B24EF9 /* Supporting Files */,
@@ -99,15 +99,15 @@
 				48F8EF3B2793F1FF0040226C /* StaticTableViewController.swift */,
 				48F8EF3F2793F49E0040226C /* PersonalViewController.swift */,
 			);
-			path = AWM;
+			path = Trashify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		48D91B31269D7EA400F0DA9D /* AWM */ = {
+		48D91B31269D7EA400F0DA9D /* Trashify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48D91B46269D7EA500F0DA9D /* Build configuration list for PBXNativeTarget "AWM" */;
+			buildConfigurationList = 48D91B46269D7EA500F0DA9D /* Build configuration list for PBXNativeTarget "Trashify" */;
 			buildPhases = (
 				48D91B2E269D7EA400F0DA9D /* Sources */,
 				48D91B2F269D7EA400F0DA9D /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = AWM;
+			name = Trashify;
 			productName = AWM;
-			productReference = 48D91B32269D7EA400F0DA9D /* AWM.app */;
+			productReference = 48D91B32269D7EA400F0DA9D /* Trashify.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 48D91B2D269D7EA400F0DA9D /* Build configuration list for PBXProject "AWM" */;
+			buildConfigurationList = 48D91B2D269D7EA400F0DA9D /* Build configuration list for PBXProject "Trashify" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48D91B31269D7EA400F0DA9D /* AWM */,
+				48D91B31269D7EA400F0DA9D /* Trashify */,
 			);
 		};
 /* End PBXProject section */
@@ -335,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CV5F63AHVX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AWM/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Trashify/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = alexlai.AWM;
+				PRODUCT_BUNDLE_IDENTIFIER = alexlai.Trashify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CV5F63AHVX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AWM/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Trashify/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -374,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = alexlai.AWM;
+				PRODUCT_BUNDLE_IDENTIFIER = alexlai.Trashify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,7 +385,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48D91B2D269D7EA400F0DA9D /* Build configuration list for PBXProject "AWM" */ = {
+		48D91B2D269D7EA400F0DA9D /* Build configuration list for PBXProject "Trashify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48D91B44269D7EA500F0DA9D /* Debug */,
@@ -394,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48D91B46269D7EA500F0DA9D /* Build configuration list for PBXNativeTarget "AWM" */ = {
+		48D91B46269D7EA500F0DA9D /* Build configuration list for PBXNativeTarget "Trashify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48D91B47269D7EA500F0DA9D /* Debug */,
