@@ -31,6 +31,11 @@ class HistoryViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        historyTable.reloadData()
+        historyTable.refreshControl?.endRefreshing()
+    }
+    
     private func isKeyPresentInUserDefaults(key: String) -> Bool {
         return defaults.object(forKey: key) != nil
     }
