@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48661498279B67D700803057 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48661497279B67D700803057 /* HistoryViewController.swift */; };
+		4866149A279B9BE900803057 /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48661499279B9BE900803057 /* HistoryDetailsViewController.swift */; };
 		48A34DE626A4EEF500B24EF9 /* EightClassClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */; };
 		48A34DE826A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A34DE726A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		48A34DEA26A5357600B24EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A34DE926A5357600B24EF9 /* SceneDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48661497279B67D700803057 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		48661499279B9BE900803057 /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
 		48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EightClassClassification.mlmodel; sourceTree = "<group>"; };
 		48A34DE726A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		48A34DE926A5357600B24EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				48F8EF362793F1B60040226C /* DatePickerViewController.swift */,
 				48F8EF3B2793F1FF0040226C /* StaticTableViewController.swift */,
 				48F8EF3F2793F49E0040226C /* PersonalViewController.swift */,
+				48661497279B67D700803057 /* HistoryViewController.swift */,
+				48661499279B9BE900803057 /* HistoryDetailsViewController.swift */,
 			);
 			path = Trashify;
 			sourceTree = "<group>";
@@ -177,9 +183,11 @@
 				48F8EF382793F1B60040226C /* ChangeRegionViewController.swift in Sources */,
 				48D91B3A269D7EA400F0DA9D /* ClassifyViewController.swift in Sources */,
 				48E445CA2736051E00599CF0 /* SettingTableViewCell.swift in Sources */,
+				48661498279B67D700803057 /* HistoryViewController.swift in Sources */,
 				48D91B36269D7EA400F0DA9D /* AppDelegate.swift in Sources */,
 				48F8EF3A2793F1B60040226C /* ChangeNameViewController.swift in Sources */,
 				48F8EF392793F1B60040226C /* DatePickerViewController.swift in Sources */,
+				4866149A279B9BE900803057 /* HistoryDetailsViewController.swift in Sources */,
 				48F8EF3C2793F1FF0040226C /* StaticTableViewController.swift in Sources */,
 				48A34DE626A4EEF500B24EF9 /* EightClassClassification.mlmodel in Sources */,
 				48A34DE826A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
