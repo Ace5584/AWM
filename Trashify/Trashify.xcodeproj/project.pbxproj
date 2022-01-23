@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48661498279B67D700803057 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48661497279B67D700803057 /* HistoryViewController.swift */; };
 		4866149A279B9BE900803057 /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48661499279B9BE900803057 /* HistoryDetailsViewController.swift */; };
+		4880DF90279D0AF400C5B4CE /* AfterClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4880DF8F279D0AF400C5B4CE /* AfterClassificationViewController.swift */; };
 		48A34DE626A4EEF500B24EF9 /* EightClassClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */; };
 		48A34DE826A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A34DE726A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		48A34DEA26A5357600B24EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A34DE926A5357600B24EF9 /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		48661497279B67D700803057 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		48661499279B9BE900803057 /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
+		4880DF8F279D0AF400C5B4CE /* AfterClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterClassificationViewController.swift; sourceTree = SOURCE_ROOT; };
 		48A34DE526A4EEF500B24EF9 /* EightClassClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EightClassClassification.mlmodel; sourceTree = "<group>"; };
 		48A34DE726A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		48A34DE926A5357600B24EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				48F8EF3F2793F49E0040226C /* PersonalViewController.swift */,
 				48661497279B67D700803057 /* HistoryViewController.swift */,
 				48661499279B9BE900803057 /* HistoryDetailsViewController.swift */,
+				4880DF8F279D0AF400C5B4CE /* AfterClassificationViewController.swift */,
 			);
 			path = Trashify;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				48A34DE826A4F84F00B24EF9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				48F8EF402793F49E0040226C /* PersonalViewController.swift in Sources */,
 				48E445C8273604BF00599CF0 /* SettingsViewController.swift in Sources */,
+				4880DF90279D0AF400C5B4CE /* AfterClassificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

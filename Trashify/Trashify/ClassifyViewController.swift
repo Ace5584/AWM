@@ -19,6 +19,24 @@ class ClassifyViewController: UIViewController {
     @IBOutlet weak var classificationLabel: UILabel!
     @IBOutlet weak var cameraButton: UIButton!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedItem = sender as? Int else{
+            return
+        }
+        if segue.identifier == "AfterClassificationSegue"{
+            guard let destinationVC = segue.destination as? AfterClassificationViewController else{
+                return
+            }
+            destinationVC.index = selectedItem
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(enableAfterClassificationScene(_:)), name: Notification.Name("AfterClassification"), object: nil)
+    }
+    
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
             print("Hello. 5")
@@ -92,16 +110,21 @@ class ClassifyViewController: UIViewController {
                 formatter.dateStyle = .medium
                 let DateTime = formatter.string(from: currentDateTime)
                 description = description+"|"+DateTime
+                var index = 0
                 if(self.isKeyPresentInUserDefaults(key: "ClassifyResult")){
                     var data = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
+                    index = data.count
                     data.append(description)
                     defaults.set(data, forKey: "ClassifyResult")
+                    NotificationCenter.default.post(name: Notification.Name("AfterClassification"), object: index)
                     print("Save Data Exist", description)
                 }
                 else{
                     defaults.set([description], forKey: "ClassifyResult")
+                    NotificationCenter.default.post(name: Notification.Name("AfterClassification"), object: index)
                     print("Save Data New", description)
                 }
+                
             }
         }
     }
@@ -148,6 +171,14 @@ class ClassifyViewController: UIViewController {
         picker.delegate = self
         picker.sourceType = sourceType
         present(picker, animated: true)
+    }
+    
+    @objc func enableAfterClassificationScene(_ notification: Notification){
+        if(isEditing == false){
+            let index = notification.object as? Int ?? 0
+            self.performSegue(withIdentifier: "AfterClassificationSegue", sender: index)
+            
+        }
     }
     
     private func isKeyPresentInUserDefaults(key: String) -> Bool {

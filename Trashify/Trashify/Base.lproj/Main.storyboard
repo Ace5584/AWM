@@ -405,7 +405,7 @@
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujy-7d-I9h">
                                 <rect key="frame" x="20" y="546" width="374" height="56.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XYw-W8-xQa">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="56.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-ct-IUr">
@@ -475,6 +475,7 @@
                         <outlet property="cameraButton" destination="Ixy-RE-ucS" id="mzg-Rx-tkv"/>
                         <outlet property="classificationLabel" destination="hxU-ct-IUr" id="yrz-6e-QTb"/>
                         <outlet property="imageView" destination="p55-EX-P4F" id="p6K-yZ-1dh"/>
+                        <segue destination="D7p-V9-UFx" kind="showDetail" identifier="AfterClassificationSegue" id="wVY-Fz-xvj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -894,6 +895,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNB-5Z-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.91304347826099" y="1092.8571428571429"/>
+        </scene>
+        <!--After Classification View Controller-->
+        <scene sceneID="NWn-w9-Qyq">
+            <objects>
+                <viewController id="D7p-V9-UFx" customClass="AfterClassificationViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZuD-iM-chc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8hM-dS-9Dp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0gT-1a-VAX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilz-ev-TvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="1778"/>
         </scene>
     </scenes>
     <color key="tintColor" name="OppositeAccentColor"/>
