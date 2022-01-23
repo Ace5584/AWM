@@ -72,8 +72,11 @@ extension HistoryViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataLabel = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
+        var label = dataLabel[indexPath.item]
+        let splitLabel = label.components(separatedBy: "|")
+        label = splitLabel[2] + " - " + splitLabel[1]
         let cell  = historyTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = dataLabel[indexPath.item]
+        cell.textLabel?.text = label
         return cell
     }
     

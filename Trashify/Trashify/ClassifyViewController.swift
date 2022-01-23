@@ -144,7 +144,6 @@ class ClassifyViewController: UIViewController {
     }
     
     func presentPhotoPicker(sourceType: UIImagePickerController.SourceType) {
-        print("Hello. 1")
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = sourceType
@@ -158,7 +157,6 @@ class ClassifyViewController: UIViewController {
 
 extension ClassifyViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("Hello.")
         picker.dismiss(animated: true)
         
         // We always expect `imagePickerController(:didFinishPickingMediaWithInfo:)` to supply the original image.
