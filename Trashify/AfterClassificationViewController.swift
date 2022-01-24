@@ -9,6 +9,7 @@ import UIKit
 
 class AfterClassificationViewController: UIViewController {
 
+    @IBOutlet weak var trashIcon: UIImageView!
     var index: Int?
     var binColor: String!
     
@@ -44,6 +45,16 @@ class AfterClassificationViewController: UIViewController {
         }
         
         print(binColor + " - " + splitLabel[1])
+        
+        if binColor == "Green"{
+            trashIcon.image = UIImage(named: "GreenTrashCan")
+        }
+        else if binColor == "Red"{
+            trashIcon.image = UIImage(named: "RedTrashCan")
+        }
+        else if binColor == "Yellow"{
+            trashIcon.image = UIImage(named: "YellowTrashCan")
+        }
     }
     
 }

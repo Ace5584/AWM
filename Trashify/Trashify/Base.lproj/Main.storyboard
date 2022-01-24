@@ -903,14 +903,23 @@
                     <view key="view" contentMode="scaleToFill" id="ZuD-iM-chc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-Lu-pRb">
+                                <rect key="frame" x="82" y="114" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8hM-dS-9Dp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0gT-1a-VAX"/>
+                    <connections>
+                        <outlet property="trashIcon" destination="c5F-Lu-pRb" id="IMj-3T-WsR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilz-ev-TvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1826" y="1778"/>
+            <point key="canvasLocation" x="-1826.0869565217392" y="1777.9017857142856"/>
         </scene>
     </scenes>
     <color key="tintColor" name="OppositeAccentColor"/>
