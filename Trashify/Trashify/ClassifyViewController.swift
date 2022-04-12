@@ -175,6 +175,7 @@ class ClassifyViewController: UIViewController {
     
     @objc func enableAfterClassificationScene(_ notification: Notification){
         if(isEditing == false){
+            print("----------------------------------------------------")
             let index = notification.object as? Int ?? 0
             self.performSegue(withIdentifier: "AfterClassificationSegue", sender: index)
             

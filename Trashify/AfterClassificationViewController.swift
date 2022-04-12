@@ -40,11 +40,12 @@ class AfterClassificationViewController: UIViewController {
         else if splitLabel[1] == "paper"{
             binColor = "Yellow"
         }
-        else if splitLabel[1] == "paper"{
+        else if splitLabel[1] == "plastic"{
             binColor = "Yellow"
         }
         
-        print(binColor + " - " + splitLabel[1])
+        
+        print(String(binColor) + " - " + splitLabel[1])
         
         if binColor == "Green"{
             trashIcon.image = UIImage(named: "GreenTrashCan")
