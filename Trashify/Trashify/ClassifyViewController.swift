@@ -97,12 +97,16 @@ class ClassifyViewController: UIViewController {
                 self.classificationLabel.text = "Nothing recognized."
             } else {
                 let topClassifications = classifications.prefix(1) // Get only top one result
-                print(type(of:topClassifications[0]))
-                print(topClassifications[0])
 //                let descriptions = topClassifications.map { classification in
 //                    return String(format: " (%.2f) %@", classification.confidence, classification.identifier)
 //                }
-                var description = String(format: "%.2f|%@", topClassifications[0].confidence, topClassifications[0].identifier)
+                print(topClassifications[0].confidence)
+                var confidence = String(format: "%.2f", topClassifications[0].confidence)
+                var fConfidence = Float(confidence)
+                fConfidence = (fConfidence ?? 0)*100.0
+                confidence = String(describing: round(fConfidence!))
+                let classification = String(format: "%@", topClassifications[0].identifier)
+                var description = confidence+"%|"+classification
                 self.classificationLabel.text = "Classification: \n" + description
                 let formatter = DateFormatter()
                 let currentDateTime = Date()
@@ -176,6 +180,7 @@ class ClassifyViewController: UIViewController {
     @objc func enableAfterClassificationScene(_ notification: Notification){
         if(isEditing == false){
             let index = notification.object as? Int ?? 0
+            
             self.performSegue(withIdentifier: "AfterClassificationSegue", sender: index)
             
         }

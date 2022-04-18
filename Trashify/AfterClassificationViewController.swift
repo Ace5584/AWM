@@ -15,7 +15,7 @@ class AfterClassificationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let dataPhoto = UserDefaults.standard.object(forKey: "ClassifyPicture") as! [NSData]
+        let dataPhoto = UserDefaults.standard.object(forKey: "ClassifyPicture") as! [NSData]
         let dataLabel = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
         let splitLabel = dataLabel[index ?? 0].components(separatedBy: "|")
         
