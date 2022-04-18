@@ -42,33 +42,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func configure(){
         tableView.separatorInset = UIEdgeInsets.init(top: 0, left: 70, bottom: 0, right: 0)
-        models.append(Section(title: "General", options: [
-            SettingssOption(title: "Background", icon: UIImage(systemName: "person.crop.artframe"), iconBackgroundColor: .systemCyan){
-        },
-            SettingssOption(title: "Color Scheme", icon: UIImage(systemName: "paintpalette.fill"), iconBackgroundColor: .systemRed){
-            
-        }]))
         
         models.append(Section(title: "Privacy", options: [
             SettingssOption(title: "Personal Information", icon: UIImage(systemName: "person.circle"), iconBackgroundColor: .systemPink){
             self.performSegue(withIdentifier: "SettingsPersonal", sender: self)
-        },
-            SettingssOption(title: "Notification", icon: UIImage(systemName: "alarm"), iconBackgroundColor: .systemBlue){
-            
-        },
-            SettingssOption(title: "Account Information", icon: UIImage(systemName: "person.fill"), iconBackgroundColor: .systemGreen){
-            
-        },
-            SettingssOption(title: "Permissions", icon: UIImage(systemName: "globe"), iconBackgroundColor: .systemOrange){
-            
-        },
-            SettingssOption(title: "Social", icon: UIImage(systemName: "person.3.fill"), iconBackgroundColor: .systemBrown){
-                              
         }]))
         
         models.append(Section(title: "Advanced", options: [
             SettingssOption(title: "Data", icon: UIImage(systemName: "lock.laptopcomputer"), iconBackgroundColor: .systemIndigo){
-            
         }]))
     }
     

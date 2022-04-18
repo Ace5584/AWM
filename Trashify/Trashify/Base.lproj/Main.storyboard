@@ -353,9 +353,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="790"/>
                             </imageView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujy-7d-I9h">
-                                <rect key="frame" x="20" y="546" width="374" height="56.5"/>
+                                <rect key="frame" x="20" y="545.5" width="374" height="57.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XYw-W8-xQa">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-ct-IUr">
