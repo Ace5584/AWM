@@ -329,9 +329,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="790"/>
                             </imageView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujy-7d-I9h">
-                                <rect key="frame" x="20" y="545.5" width="374" height="57.5"/>
+                                <rect key="frame" x="20" y="546" width="374" height="56.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XYw-W8-xQa">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="56.5"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-ct-IUr">
@@ -401,7 +401,9 @@
                         <outlet property="cameraButton" destination="Ixy-RE-ucS" id="mzg-Rx-tkv"/>
                         <outlet property="classificationLabel" destination="hxU-ct-IUr" id="yrz-6e-QTb"/>
                         <outlet property="imageView" destination="p55-EX-P4F" id="p6K-yZ-1dh"/>
-                        <segue destination="D7p-V9-UFx" kind="showDetail" identifier="AfterClassificationSegue" id="wVY-Fz-xvj"/>
+                        <segue destination="D7p-V9-UFx" kind="popoverPresentation" identifier="AfterClassificationSegue" popoverAnchorView="8bC-Xf-vdC" id="EKp-fE-XQ0">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -851,7 +853,6 @@
         <!--Data-->
         <scene sceneID="UIM-ZD-yDp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nNg-zT-QyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="Data" id="Wcv-su-NpA" customClass="DataStaticTableViewController" customModule="Trashify" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="xXQ-4X-GFX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -890,6 +891,7 @@
                         <outlet property="labelClearData" destination="w2C-bh-1IM" id="XYF-o6-QOe"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNg-zT-QyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2025" y="1806"/>
         </scene>
