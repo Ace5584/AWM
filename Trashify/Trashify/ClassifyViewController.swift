@@ -114,6 +114,7 @@ class ClassifyViewController: UIViewController {
                 formatter.dateStyle = .medium
                 let DateTime = formatter.string(from: currentDateTime)
                 description = description+"|"+DateTime
+                description = description+"|"+self.binColor(trashType: classification)
                 var index = 0
                 if(self.isKeyPresentInUserDefaults(key: "ClassifyResult")){
                     var data = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
@@ -188,6 +189,37 @@ class ClassifyViewController: UIViewController {
     
     private func isKeyPresentInUserDefaults(key: String) -> Bool {
         return defaults.object(forKey: key) != nil
+    }
+    
+    private func binColor(trashType: String) -> String{
+        var binColor: String!
+        
+        if trashType == "battery"{
+            binColor = "Special"
+        }
+        else if trashType == "biological"{
+            binColor = "Green"
+        }
+        else if trashType == "cardboard"{
+            binColor = "Yellow"
+        }
+        else if trashType == "clothes"{
+            binColor = "Red"
+        }
+        else if trashType == "glass"{
+            binColor = "Red"
+        }
+        else if trashType == "metal"{
+            binColor = "Yellow"
+        }
+        else if trashType == "paper"{
+            binColor = "Yellow"
+        }
+        else if trashType == "plastic"{
+            binColor = "Yellow"
+        }
+        
+        return binColor
     }
 }
 
