@@ -63,6 +63,7 @@ extension HistoryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(self.isKeyPresentInUserDefaults(key: "ClassifyResult")){
             let data = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
+            print(data.count)
             return data.count
         }
         else{

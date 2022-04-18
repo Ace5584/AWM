@@ -50,6 +50,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         models.append(Section(title: "Advanced", options: [
             SettingssOption(title: "Data", icon: UIImage(systemName: "lock.laptopcomputer"), iconBackgroundColor: .systemIndigo){
+                self.performSegue(withIdentifier: "DataSegue", sender: self)
         }]))
     }
     
