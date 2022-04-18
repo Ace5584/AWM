@@ -40,7 +40,7 @@ class AfterClassificationViewController: UIViewController {
         else if splitLabel[1] == "paper"{
             binColor = "Yellow"
         }
-        else if splitLabel[1] == "paper"{
+        else if splitLabel[1] == "plastic"{
             binColor = "Yellow"
         }
         
