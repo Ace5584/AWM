@@ -135,21 +135,6 @@ class ClassifyViewController: UIViewController {
     }
     
     @IBAction func takePicture() {
-        print("Take Picture Drop Down Menu")
-        if(self.isKeyPresentInUserDefaults(key: "ClassifyResult")){
-            let data = UserDefaults.standard.object(forKey: "ClassifyResult") as! [String]
-            print(data)
-        }
-        else{
-            print("ClassifyResult does not exist")
-        }
-        if(self.isKeyPresentInUserDefaults(key: "ClassifyPicture")){
-            let data = UserDefaults.standard.object(forKey: "ClassifyPicture") as! [NSData]
-            print(data.count)
-        }
-        else{
-            print("ClassifyPicture does not exist")
-        }
         // Show options for the source picker only if the camera is available.
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             presentPhotoPicker(sourceType: .photoLibrary)

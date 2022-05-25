@@ -121,14 +121,9 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="sNC-0V-GaB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have Classified: 0 Trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kys-kK-tkA">
-                                <rect key="frame" x="112.5" y="437.5" width="189" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="OppositeAccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region: Victoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dc-Xy-ZPg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Region: Victoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dc-Xy-ZPg">
                                 <rect key="frame" x="147" y="473" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="OppositeAccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -189,15 +184,10 @@
                             <constraint firstItem="iMN-tr-BcQ" firstAttribute="centerY" secondItem="xcy-x0-38k" secondAttribute="centerY" constant="132" id="3g6-l9-Ikd"/>
                             <constraint firstItem="0sQ-el-fz2" firstAttribute="centerX" secondItem="xcy-x0-38k" secondAttribute="centerX" id="6lB-Sh-ob9"/>
                             <constraint firstItem="A9M-Bc-Z2p" firstAttribute="bottom" secondItem="0sQ-el-fz2" secondAttribute="bottom" constant="403" id="9wC-2r-Gni"/>
-                            <constraint firstItem="kys-kK-tkA" firstAttribute="centerX" secondItem="xcy-x0-38k" secondAttribute="centerX" id="B1W-Q0-27D"/>
-                            <constraint firstItem="4Dc-Xy-ZPg" firstAttribute="top" secondItem="kys-kK-tkA" secondAttribute="bottom" constant="14.5" id="LKo-nM-rFe"/>
                             <constraint firstItem="0sQ-el-fz2" firstAttribute="centerY" secondItem="xcy-x0-38k" secondAttribute="centerY" constant="-138" id="NmY-41-Yr7"/>
                             <constraint firstItem="0Ne-k9-8Ue" firstAttribute="centerX" secondItem="xcy-x0-38k" secondAttribute="centerX" constant="132" id="QJM-1O-vJa"/>
-                            <constraint firstItem="kys-kK-tkA" firstAttribute="centerX" secondItem="xcy-x0-38k" secondAttribute="centerX" id="VkB-gC-sRa"/>
                             <constraint firstItem="DJ3-OZ-gUT" firstAttribute="centerY" secondItem="xcy-x0-38k" secondAttribute="centerY" constant="-351.5" id="agT-o5-iwL"/>
                             <constraint firstItem="rBS-1C-dm7" firstAttribute="centerY" secondItem="xcy-x0-38k" secondAttribute="centerY" constant="132" id="cb0-Sv-xtr"/>
-                            <constraint firstItem="kys-kK-tkA" firstAttribute="centerY" secondItem="xcy-x0-38k" secondAttribute="centerY" id="izq-lq-xYz"/>
-                            <constraint firstItem="4Dc-Xy-ZPg" firstAttribute="centerX" secondItem="kys-kK-tkA" secondAttribute="centerX" id="nHs-JP-LUR"/>
                             <constraint firstItem="0sQ-el-fz2" firstAttribute="leading" secondItem="A9M-Bc-Z2p" secondAttribute="leading" constant="107" id="sLE-rd-Xub"/>
                             <constraint firstItem="DJ3-OZ-gUT" firstAttribute="centerX" secondItem="xcy-x0-38k" secondAttribute="centerX" id="uF8-cP-VEo"/>
                             <constraint firstItem="rBS-1C-dm7" firstAttribute="centerX" secondItem="xcy-x0-38k" secondAttribute="centerX" constant="-132" id="wZt-LR-jP9"/>
@@ -329,9 +319,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="790"/>
                             </imageView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujy-7d-I9h">
-                                <rect key="frame" x="20" y="545.5" width="374" height="57.5"/>
+                                <rect key="frame" x="20" y="546" width="374" height="57"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XYw-W8-xQa">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="57"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-ct-IUr">
@@ -355,17 +345,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-RE-ucS">
-                                <rect key="frame" x="182" y="673" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-RE-ucS">
+                                <rect key="frame" x="108" y="643" width="198" height="121"/>
                                 <color key="backgroundColor" name="Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Nh7-dH-Uyh"/>
-                                    <constraint firstAttribute="height" constant="50" id="lvg-Ic-ZeW"/>
+                                    <constraint firstAttribute="height" constant="121" id="lvg-Ic-ZeW"/>
                                 </constraints>
                                 <color key="tintColor" name="Green"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="camera" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -389,7 +380,7 @@
                             <constraint firstItem="p55-EX-P4F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QeC-eb-4kY"/>
                             <constraint firstItem="p55-EX-P4F" firstAttribute="centerX" secondItem="ujy-7d-I9h" secondAttribute="centerX" id="Xoy-Hm-mKq"/>
                             <constraint firstItem="ujy-7d-I9h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZg-5E-X0B"/>
-                            <constraint firstItem="Ixy-RE-ucS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="j8V-yF-4nC"/>
+                            <constraint firstItem="Ixy-RE-ucS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="255.5" id="j8V-yF-4nC"/>
                             <constraint firstItem="ujy-7d-I9h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="126.25" id="wO2-BH-fTI"/>
                             <constraint firstAttribute="bottomMargin" secondItem="p55-EX-P4F" secondAttribute="bottom" constant="-26" id="yfP-aC-hxp"/>
                         </constraints>
@@ -408,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1825" y="1094"/>
+            <point key="canvasLocation" x="-1826.0869565217392" y="1092.8571428571429"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="SsK-x3-86d">
@@ -511,6 +502,34 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="BV4-2l-Npg">
+                                                    <rect key="frame" x="15" y="26" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="duD-Ed-VfT">
+                                                    <rect key="frame" x="15" y="50" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="tkI-f5-79l">
+                                                    <rect key="frame" x="15" y="74" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="hhu-Ag-P0r">
+                                                    <rect key="frame" x="15" y="98" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="sm1-Yy-yzk">
+                                                    <rect key="frame" x="15" y="122" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-aK-Gnt">
+                                                    <rect key="frame" x="15" y="146" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="tab-vo-4Uh">
+                                                    <rect key="frame" x="15" y="170" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -568,6 +587,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="h9Z-Og-Thw">
+                                                    <rect key="frame" x="15" y="26" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-0t-UOs">
+                                                    <rect key="frame" x="15" y="50" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="d0n-7s-UUr">
+                                                    <rect key="frame" x="15" y="74" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="cqE-cI-tFf">
+                                                    <rect key="frame" x="15" y="98" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="0UP-rn-b9H">
+                                                    <rect key="frame" x="15" y="122" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1173,6 +1212,34 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="q9F-XJ-TfA">
+                                                    <rect key="frame" x="13" y="26" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-oV-XAQ">
+                                                    <rect key="frame" x="13" y="50" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="kLq-Ys-tcO">
+                                                    <rect key="frame" x="13" y="74" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-oa-NzB">
+                                                    <rect key="frame" x="13" y="98" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="ihy-2p-VD3">
+                                                    <rect key="frame" x="13" y="122" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="I2Z-eo-T0i">
+                                                    <rect key="frame" x="13" y="146" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-iu-FsK">
+                                                    <rect key="frame" x="13" y="170" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1251,6 +1318,38 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="WXQ-I6-hj0">
+                                                    <rect key="frame" x="13" y="26" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="nvG-yc-55P">
+                                                    <rect key="frame" x="13" y="50" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-Vg-Toh">
+                                                    <rect key="frame" x="13" y="74" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-OJ-YcH">
+                                                    <rect key="frame" x="13" y="98" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="8G7-no-FrF">
+                                                    <rect key="frame" x="13" y="122" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="q2M-VZ-sIY">
+                                                    <rect key="frame" x="13" y="146" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="XrK-xx-BE5">
+                                                    <rect key="frame" x="13" y="170" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="HcG-uN-MGD">
+                                                    <rect key="frame" x="13" y="194" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1447,6 +1546,38 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="1eE-ib-7aa">
+                                                    <rect key="frame" x="13" y="26" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="nao-5p-yD1">
+                                                    <rect key="frame" x="13" y="50" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="xxT-dk-oCO">
+                                                    <rect key="frame" x="13" y="89" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="1yD-Lk-Cr1">
+                                                    <rect key="frame" x="13" y="116" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="npf-JM-aL6">
+                                                    <rect key="frame" x="13" y="152" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-xB-XlA">
+                                                    <rect key="frame" x="13" y="176" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-3d-IPJ">
+                                                    <rect key="frame" x="13" y="200" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-vF-Gs1">
+                                                    <rect key="frame" x="13" y="224" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1506,6 +1637,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="MjP-tn-mHH">
+                                                    <rect key="frame" x="13" y="26" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="lCt-QZ-Rkq">
+                                                    <rect key="frame" x="13" y="50" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="76s-Xs-IB4">
+                                                    <rect key="frame" x="13" y="74" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waxed cardboard Gas cylinders Syringes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-Hj-6dw">
                                                     <rect key="frame" x="43" y="142" width="248" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1527,6 +1670,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="oL8-xE-Qp5">
+                                                    <rect key="frame" x="13" y="115" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-dd-oWn">
+                                                    <rect key="frame" x="13" y="139" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="nbK-15-LtA">
+                                                    <rect key="frame" x="13" y="163" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossMark" translatesAutoresizingMaskIntoConstraints="NO" id="w0v-XT-S46">
+                                                    <rect key="frame" x="13" y="187" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1583,6 +1742,8 @@
     </scenes>
     <color key="tintColor" name="OppositeAccentColor"/>
     <resources>
+        <image name="CheckMark" width="1368" height="1368"/>
+        <image name="CrossMark" width="1368" height="1368"/>
         <image name="GreenTrashCan" width="1024" height="1024"/>
         <image name="Logo" width="1024" height="1024"/>
         <image name="RedTrashCan" width="1024" height="1024"/>
