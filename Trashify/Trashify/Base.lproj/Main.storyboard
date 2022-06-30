@@ -1748,12 +1748,12 @@
         <image name="Logo" width="1024" height="1024"/>
         <image name="RedTrashCan" width="1024" height="1024"/>
         <image name="YellowTrashCan" width="1024" height="1024"/>
-        <image name="camera" catalog="system" width="32" height="32"/>
-        <image name="camera.fill" catalog="system" width="32" height="32"/>
-        <image name="gear.circle" catalog="system" width="32" height="32"/>
-        <image name="homekit" catalog="system" width="32" height="32"/>
-        <image name="person.circle.fill" catalog="system" width="32" height="32"/>
-        <image name="person.fill" catalog="system" width="32" height="32"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="gear.circle" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="AccentColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

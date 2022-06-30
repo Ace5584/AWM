@@ -16,23 +16,23 @@ public let defaults = UserDefaults.standard
 class ClassifyViewController: UIViewController {
     
     // Initialize and link elements inside of the view controller
-    @IBOutlet weak var imageView: UIImageView!       // An image view that displays the image of the classified trash
-    @IBOutlet weak var classificationLabel: UILabel! // A label that displays the result of the classification
-    @IBOutlet weak var cameraButton: UIButton!       // A button that pulls up image picker or camera when pressed
+    @IBOutlet weak var imvClassified: UIImageView!       // An image view that displays the image of the classified trash
+    @IBOutlet weak var lblClassification: UILabel! // A label that displays the result of the classification
+    @IBOutlet weak var btnCamera: UIButton!       // A button that pulls up image picker or camera when pressed
     
     // Overriding prepare function that prepares to open the next screen depending on which screen is selected
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // A code protection that makes sure the selected item is a valid integer
-        guard let selectedItem = sender as? Int else{
+        guard let intSelectedItem = sender as? Int else{
             return
         }
         
         // Check if the segue that is being passed through is the segue that is wanted and in result prepare the segue
         if segue.identifier == "AfterClassificationSegue"{
-            guard let destinationVC = segue.destination as? AfterClassificationViewController else{
+            guard let SegDestinationVC = segue.destination as? AfterClassificationViewController else{
                 return
             }
-            destinationVC.index = selectedItem
+            SegDestinationVC.index = intSelectedItem
         }
     }
     
@@ -49,21 +49,21 @@ class ClassifyViewController: UIViewController {
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
             // Create a configuration for the Machine Learning model to be inputted in
-            let config = MLModelConfiguration()
+            let mlcConfig = MLModelConfiguration()
             // attempt to import the model, will have a failsafe that errors out without crashing the app if the file
             // doesn't exist or is corrupted
-            let model = try VNCoreMLModel(for: EightClassClassification(configuration: config).model)
+            let vcmModel = try VNCoreMLModel(for: EightClassClassification(configuration: mlcConfig).model)
             
             // Create a request for the Machine Learning Model so it can be used for classification
-            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+            let vcrRequest = VNCoreMLRequest(model: vcmModel, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
             })
             
             // Crop the image to the required scale
-            request.imageCropAndScaleOption = .centerCrop
+            vcrRequest.imageCropAndScaleOption = .centerCrop
             
             // Return the Machine Learning Model Request created earlier
-            return request
+            return vcrRequest
             
         } catch {
             // Display Error
@@ -72,35 +72,35 @@ class ClassifyViewController: UIViewController {
     }()
     
     // This function upadtes the classification of the iamge
-    func updateClassifications(for image: UIImage) {
+    func updateClassifications(for uimImage: UIImage) {
         
-        classificationLabel.text = "Classifying..."
+        lblClassification.text = "Classifying..."
         
         // Get the correct orientation of the image
-        let orientation = CGImagePropertyOrientation(image.imageOrientation)
+        let cgiOrientation = CGImagePropertyOrientation(uimImage.imageOrientation)
         // Convert the UIImage into ciImage and creates a failsafe if the convertion is unsuccessful without crashing
         // the application
-        guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) from \(image).")}
+        guard let ciImage = CIImage(image: uimImage) else { fatalError("Unable to create \(CIImage.self) from \(uimImage).")}
         
         // This queues the tasks of performing classification in an async mode
         DispatchQueue.global(qos: .userInitiated).async{
             // Creating a image request handle to perform the classification
-            let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation)
+            let vniHandler = VNImageRequestHandler(ciImage: ciImage, orientation: cgiOrientation)
             do{
                 // Attemp to perform the classification
-                try handler.perform([self.classificationRequest])
+                try vniHandler.perform([self.classificationRequest])
                 
                 // Checks whether the key stores previously classified photos exist
                 if(self.isKeyPresentInUserDefaults(key: "ClassifyPicture")){
                     // If the key exists, create a temporary variable that stores it and then append the new data
                     var data = UserDefaults.standard.object(forKey: "ClassifyPicture") as! [NSData]
-                    data.append(image.pngData()! as NSData)
+                    data.append(uimImage.pngData()! as NSData)
                     defaults.set(data, forKey: "ClassifyPicture")
                     print("Save Image Exist")
                 }
                 else{
                     // If the previous key does not exist, create the key and save the image as a list
-                    let imageData = [image.pngData()! as NSData]
+                    let imageData = [uimImage.pngData()! as NSData]
                     defaults.set(imageData, forKey: "ClassifyPicture")
                     print("Save Image New")
                 }
@@ -117,7 +117,7 @@ class ClassifyViewController: UIViewController {
         DispatchQueue.main.async {
             // Attemps to classify the image, with a failsafe to assign label if classification cannot be done
             guard let results = request.results else{
-                self.classificationLabel.text = "Unable to classify Image. \n\(error!.localizedDescription)"
+                self.lblClassification.text = "Unable to classify Image. \n\(error!.localizedDescription)"
                 return
             }
             
@@ -125,7 +125,7 @@ class ClassifyViewController: UIViewController {
             let classifications = results as! [VNClassificationObservation]
             
             if classifications.isEmpty {
-                self.classificationLabel.text = "Nothing recognized."
+                self.lblClassification.text = "Nothing recognized."
             } else {
                 // Format the results of the classification
                 let topClassifications = classifications.prefix(1)                          // Get only top one result
@@ -137,7 +137,7 @@ class ClassifyViewController: UIViewController {
                 var description = confidence+"%|"+classification
                 
                 // Assign the formatted result to a text label
-                self.classificationLabel.text = "Classification: \n" + description
+                self.lblClassification.text = "Classification: \n" + description
                 
                 // Get system date and then add it into the description for accessing this information in history page
                 let formatter = DateFormatter()
@@ -217,34 +217,34 @@ class ClassifyViewController: UIViewController {
     
     // A function that determines which bin the classified trash should be in
     private func binColor(trashType: String) -> String{
-        var binColor: String!
+        var strBinColor: String!
         
         if trashType == "battery"{
-            binColor = "Special"
+            strBinColor = "Special"
         }
         else if trashType == "biological"{
-            binColor = "Green"
+            strBinColor = "Green"
         }
         else if trashType == "cardboard"{
-            binColor = "Yellow"
+            strBinColor = "Yellow"
         }
         else if trashType == "clothes"{
-            binColor = "Red"
+            strBinColor = "Red"
         }
         else if trashType == "glass"{
-            binColor = "Red"
+            strBinColor = "Red"
         }
         else if trashType == "metal"{
-            binColor = "Yellow"
+            strBinColor = "Yellow"
         }
         else if trashType == "paper"{
-            binColor = "Yellow"
+            strBinColor = "Yellow"
         }
         else if trashType == "plastic"{
-            binColor = "Yellow"
+            strBinColor = "Yellow"
         }
         
-        return binColor
+        return strBinColor
     }
 }
 
@@ -255,7 +255,7 @@ extension ClassifyViewController: UIImagePickerControllerDelegate, UINavigationC
         
         // update the classification box and the image of the classification
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        imageView.image = image
+        imvClassified.image = image
         updateClassifications(for: image)
     }
 }
