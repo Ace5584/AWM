@@ -20,7 +20,7 @@ class ClassifyViewController: UIViewController {
     @IBOutlet weak var lblClassification: UILabel! // A label that displays the result of the classification
     @IBOutlet weak var btnCamera: UIButton!       // A button that pulls up image picker or camera when pressed
     
-    // Overriding prepare function that prepares to open the next screen depending on which screen is selected
+    // Overriding prepare subroutine that prepares to open the next screen depending on which screen is selected
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // A code protection that makes sure the selected item is a valid integer
         guard let intSelectedItem = sender as? Int else{
@@ -36,7 +36,7 @@ class ClassifyViewController: UIViewController {
         }
     }
     
-    // Function that runs as soon as this screen loads
+    // subroutine that runs as soon as this screen loads
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,7 +71,7 @@ class ClassifyViewController: UIViewController {
         }
     }()
     
-    // This function upadtes the classification of the iamge
+    // This subroutine upadtes the classification of the iamge
     func updateClassifications(for uimImage: UIImage) {
         
         lblClassification.text = "Classifying..."
@@ -111,7 +111,7 @@ class ClassifyViewController: UIViewController {
         
     }
     
-    // Function that processes the classification when an image is imported
+    // subroutine that processes the classification when an image is imported
     func processClassifications(for request: VNRequest,  error: Error?){
         // Where the classification happens
         DispatchQueue.main.async {
@@ -168,7 +168,7 @@ class ClassifyViewController: UIViewController {
         }
     }
     
-    // A function that triggers when the button that takes the picture is clicked
+    // A subroutine that triggers when the button that takes the picture is clicked
     @IBAction func takePicture() {
         // Show options for the source picker only if the camera is available.
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
@@ -192,7 +192,7 @@ class ClassifyViewController: UIViewController {
         present(photoSourcePicker, animated: true)
     }
     
-    // This function presents the photo picker
+    // This subroutine presents the photo picker
     func presentPhotoPicker(sourceType: UIImagePickerController.SourceType) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -200,7 +200,7 @@ class ClassifyViewController: UIViewController {
         present(picker, animated: true)
     }
     
-    // This function enables and opens the next screen when triggered
+    // This subroutine enables and opens the next screen when triggered
     @objc func enableAfterClassificationScene(_ notification: Notification){
         if(isEditing == false){
             let index = notification.object as? Int ?? 0
@@ -210,12 +210,12 @@ class ClassifyViewController: UIViewController {
         }
     }
     
-    // A function that checks whether something exist inside of userDefaults
+    // A subroutine that checks whether something exist inside of userDefaults
     private func isKeyPresentInUserDefaults(key: String) -> Bool {
         return defaults.object(forKey: key) != nil // Check whether the key exists and return boolean
     }
     
-    // A function that determines which bin the classified trash should be in
+    // A subroutine that determines which bin the classified trash should be in
     private func binColor(trashType: String) -> String{
         var strBinColor: String!
 
@@ -245,7 +245,7 @@ class ClassifyViewController: UIViewController {
     }
 }
 
-// A function that requires other classes to controll the image picker
+// A subroutine that requires other classes to controll the image picker
 extension ClassifyViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
