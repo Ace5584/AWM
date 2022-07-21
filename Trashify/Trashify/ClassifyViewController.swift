@@ -218,11 +218,8 @@ class ClassifyViewController: UIViewController {
     // A function that determines which bin the classified trash should be in
     private func binColor(trashType: String) -> String{
         var strBinColor: String!
-        
-        if trashType == "battery"{
-            strBinColor = "Special"
-        }
-        else if trashType == "biological"{
+
+        if trashType == "biological"{
             strBinColor = "Green"
         }
         else if trashType == "cardboard"{

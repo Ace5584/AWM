@@ -389,9 +389,9 @@
                     <navigationItem key="navigationItem" id="wDr-ve-VH5"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cameraButton" destination="Ixy-RE-ucS" id="mzg-Rx-tkv"/>
-                        <outlet property="classificationLabel" destination="hxU-ct-IUr" id="yrz-6e-QTb"/>
-                        <outlet property="imageView" destination="p55-EX-P4F" id="p6K-yZ-1dh"/>
+                        <outlet property="btnCamera" destination="Ixy-RE-ucS" id="EWk-bp-Sxm"/>
+                        <outlet property="imvClassified" destination="p55-EX-P4F" id="8Np-Fs-7Uu"/>
+                        <outlet property="lblClassification" destination="hxU-ct-IUr" id="DXh-gF-hJc"/>
                         <segue destination="D7p-V9-UFx" kind="popoverPresentation" identifier="AfterClassificationSegue" popoverAnchorView="8bC-Xf-vdC" id="EKp-fE-XQ0">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
